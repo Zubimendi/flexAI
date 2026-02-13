@@ -1,12 +1,12 @@
 import "../global.css";
-import { Slot, Stack, Tabs } from "expo-router";
+import { Tabs } from "expo-router";
 import AntDesign from "@expo/vector-icons/AntDesign";
 
 export default function Layout() {
   return (
     <Tabs>
       <Tabs.Screen
-        name="index"
+        name="(app)/index"
         options={{
           title: "Home",
           headerShown: false,
@@ -16,7 +16,7 @@ export default function Layout() {
         }}
       />
       <Tabs.Screen
-        name="profile"
+        name="(app)/profile"
         options={{
           title: "Profile",
           headerShown: false,
@@ -26,12 +26,12 @@ export default function Layout() {
         }}
       />
       <Tabs.Screen
-        name="history"
+        name="(app)/history"
         options={{
           title: "History",
           headerShown: false,
           tabBarIcon: ({ color, size }) => (
-            <AntDesign name="clockcircle" color={color} size={size} />
+            <AntDesign name="calendar" color={color} size={size} />
           ),
         }}
       />
