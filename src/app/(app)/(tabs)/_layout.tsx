@@ -36,6 +36,7 @@ const Layout = () => {
                 title: 'Active Workout', tabBarIcon: ({ color, size }) => (
                     <MaterialCommunityIcons name="timer-outline" color={color} size={size} />
                 ),
+                href: null,
                 tabBarStyle: { display: 'none' }
             }} />
         </Tabs>
